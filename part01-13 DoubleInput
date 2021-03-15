@@ -9,6 +9,7 @@ public class DoubleInput {
         // write your program here
         System.out.println("Give a number:");
         double input = Double.valueOf(scanner.nextLine());
-        System.out.println("You wrote " + input);
+        System.out.println("You gave the number " + input);
+
     }
 }
