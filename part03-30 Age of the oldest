@@ -1,0 +1,33 @@
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class AgeOfTheOldest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> ages = new ArrayList();
+        
+        while (true){
+            String input = scanner.nextLine();
+            if (input.isEmpty()){
+                break;
+            }else {
+                String [] pieces = input.split(",");
+                String name = pieces[0];
+                int age = Integer.valueOf(pieces[1]);
+                ages.add(age);
+            }
+        }
+        
+        int great = ages.get(0);
+        for (int age : ages){
+            if (age > great){
+                great = age;
+            }
+        }
+        System.out.println("Age of the oldest: " + great);
+
+
+    }
+}
