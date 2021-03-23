@@ -1,0 +1,9 @@
+
+public class YourFirstAccount {
+
+    public static void main(String[] args) {
+        Account compte = new Account("compte", 100.00);
+        compte.deposit(20.0);
+        System.out.println(compte);
+    }
+}
